@@ -18,9 +18,16 @@ const fizzBizz= (n)=>{
 }
 
 
-const countVowels= (vowels)=>{
-     
+const countVowels= (text)=>{
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for(let char of text){
+        if(vowels.includes(char)){
+            count = count + 1
+        }
+    }
+     return count
 }
 
 
-fizzBizz(5);
+console.log(countVowels("Kaleab"));
