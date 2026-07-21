@@ -18,9 +18,42 @@ const fizzBizz= (n)=>{
 }
 
 
-const countVowels= (vowels)=>{
-     
+const countVowels= (text)=>{
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for(let char of text){
+        if(vowels.includes(char)){
+            count = count + 1
+        }
+    }
+     return count
 }
 
+const squareCalculator=(number)=>{
+    return number * number
+}
 
-fizzBizz(5);
+const weatherConverter=(temprature)=>{
+    let fahrenheit = temprature * 9/5 + 32;
+    return fahrenheit;
+}
+
+const largeNumber = (a,b,c)=>{
+    if(a > b && a>c){
+        return a;
+    }else if(b>a && b>c){
+        return b;
+    }else{
+        return c;
+    }
+}
+
+const countCharacters = (charString)=>{
+    let charCounter = 0;
+    for(let i = 0;  )
+}
+
+console.log(countVowels("Kaleab"));
+console.log(squareCalculator(3));
+console.log(weatherConverter(1))
+console.log(largeNumber(8,9,6));
