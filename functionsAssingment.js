@@ -15,8 +15,7 @@ const fizzBizz= (n)=>{
         }
     }
    
-}
-
+};
 
 const countVowels= (text)=>{
     const vowels = "aeiouAEIOU";
@@ -27,16 +26,16 @@ const countVowels= (text)=>{
         }
     }
      return count
-}
+};
 
 const squareCalculator=(number)=>{
     return number * number
-}
+};
 
 const weatherConverter=(temprature)=>{
     let fahrenheit = temprature * 9/5 + 32;
     return fahrenheit;
-}
+};
 
 const largeNumber = (a,b,c)=>{
     if(a > b && a>c){
@@ -46,14 +45,27 @@ const largeNumber = (a,b,c)=>{
     }else{
         return c;
     }
-}
+};
+
+const sumNaturalNumbers=(number)=>{
+    let sum = 0;
+    for (let i = 1; i<= number;i++){
+        sum +=i;
+    }
+    return sum;
+};
 
 const countCharacters = (charString)=>{
     let charCounter = 0;
-    for(let i = 0;  )
+    for(let char of charString){
+        charCounter++;
+    }
+    return charCounter;
 }
 
-console.log(countVowels("Kaleab"));
-console.log(squareCalculator(3));
-console.log(weatherConverter(1))
-console.log(largeNumber(8,9,6));
+// console.log(countVowels("Kaleab"));
+// console.log(squareCalculator(3));
+// console.log(weatherConverter(1))
+// console.log(largeNumber(8,9,6));
+// console.log(sumNaturalNumbers(5));
+// console.log(countCharacters("Coder"));
